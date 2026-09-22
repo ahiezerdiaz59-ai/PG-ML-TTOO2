@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<script>
+
+let posicion = 0;
+
+function mover(direccion) {
+
+    const imagenes = document.querySelector(".imagenes");
+    const total = document.querySelectorAll(".imagenes img").length;
+
+    posicion += direccion;
+
+    if (posicion < 0) {
+        posicion = total - 1;
+    }
+
+    if (posicion >= total) {
+        posicion = 0;
+    }
+
+    imagenes.style.transform =
+        "translateX(-" + (posicion * 100) + "%)";
+}
+</script>
+
+<body>
+
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3162633574091936"
+     crossorigin="anonymous"></script>
+    
+      <div class="menu">
+        <a href="index.html">Home</a>
+    </div>
+    <ol>     
+    <h1>Marlontattoo</h1> 
+
+    <img src="img/logo.jpg" alt="">
+    
+     </a>
+
+</div></li>
+
+
+
+      <h2>Tatuajes que cuentan tu historia.</h2>
+
+         <li>Diseños personalizados, realizados con atención al detalle y adaptados a tu estilo.</li>
+ 
+       <h2>SOBRE NOSOTROS</h2>
+
+          <li>Somos un estudio de tatuajes enfocado en crear piezas únicas y personalizadas. </li>
+
+          <li>Trabajamos cada diseño desde la idea inicial hasta el tatuaje final, buscando que cada pieza tenga su propio estilo y significado.</li>
+
+       <h2>Encuentrnos</h2>
+
+          <li>📍Santiago, Republica Dominicana</li> 
+</ol>
+
+<div class="mapa">
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d7523.1796041872085!2d-70.7157647!3d19.4732447!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTnCsDI4JzE2LjAiTiA3MMKwNDInNTguMCJX!5e0!3m2!1sen!2sdo!4v1790121073939!5m2!1sen!2sdo"
+        loading="lazy"
+        allowfullscreen
+        referrerpolicy="strict-origin-when-cross-origin">
+    </iframe>
+</div>
+
+
+       <h2>NUESTRO TRABAJO</h2>
+
+       <div class="carrusel">
+    <div class="imagenes">
+        <img src="img/images (1).jpg" alt="Tatuaje 1">
+        <img src="img/images (2).jpg" alt="Tatuaje 2">
+        <img src="img/images.jpg" alt="Tatuaje 3">
+       
+    </div>
+
+    <button class="anterior" onclick="mover(-1)">‹</button>
+    <button class="siguiente" onclick="mover(1)">›</button>
+</div>
+
+          <h3>Algunos de nuestros tatuajes</h3>
+
+          <h3>Black & Grey</h3> 
+
+            <p>Contrastes, sombras y detalles para diseños con un estilo elegante y definido.</p>
+
+          <h3>Fine Line</h3>
+
+            <p>Líneas delicadas y diseños minimalistas para piezas sutiles y detalladas.</p>
+
+          <h3>Realismo</h3>
+
+            <p>Retratos, animales y composiciones con gran nivel de detalle.</p>
+          
+          <h3>Diseños personalizados</h3>
+
+            <p>¿Tienes una idea? Podemos convertirla en un diseño creado especialmente para ti.</p>
+
+    <h2>Redes</h2>   
+    
+          <li>  <div class="redes">
+    <a href="https://www.instagram.com/marlonartist2/" target="_blank">
+        Instagram
+    </a>
+
+    <a href="https://wa.me/18498172225" target="_blank">
+        WhatsApp
+    </a>
+
+    <a href="https://www.tiktok.com/@marlonartist?_r=1&_t=ZS-99xK22Ogx2l" target="_blank">
+        TikTok
+   
+     
+
+</body>
+</html>     
